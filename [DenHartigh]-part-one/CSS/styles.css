@@ -1,0 +1,152 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  }
+body{
+  background-color: #F0ECEE;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10 10 0px;
+  padding-left: 5px;
+}
+a {
+  text-decoration: none;
+}
+.adoptMeLogo{
+  font-weight: 600;
+  margin-top: 0px;
+}
+.question{
+  font-weight:600;
+  text-align: left;
+  font-size: xx-large;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  
+}
+.navcontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  text-indent:0px;
+  position: relative;
+  clear:both; 
+  padding: 0;      
+  }
+.navbuttons{
+  color: #88898B;
+  flex-grow: 1;
+  Font-size: large;
+  font-weight: 400px;
+  text-align: left;
+  text-indent: 0px;
+  }
+.navbuttons:hover{
+  background-color: #CCC;
+}
+.navAnchor{
+  color: #88898B;
+}
+.buttonAnchor{
+  color: #F0ECEE;
+}
+.contactbuttons {
+  background-color: #FF4850;
+  color: #F0ECEE;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  font-size: large;
+  margin: auto;
+  }
+.contactbuttons:hover{
+    background-color: #CCC;
+}
+.textemphasis{
+  color:#FF4850;
+  font-weight: 600;
+  font-size: inherit;
+  }
+.pitch{
+  color: #88898B;
+  margin-top: 5px;
+}
+
+@media screen and (min-width:768px) {
+  *{
+    background-color: none;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    background-image: url('bulldog.jpg');
+    background-position: top;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: auto;
+  }
+  .navbar{
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row;
+  }
+  .adoptMeLogo{
+    width: 60%;
+    margin-top: 20px;
+  }
+  .navcontainer{
+    background: none;
+    width: 30%;
+    padding: none;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    flex: none;
+  }
+  .navbuttons{
+    display: inline;
+    margin: auto;
+    text-align: center;
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contactbuttons{
+    width: auto;
+    margin: auto;
+    flex-basis: 1;
+  }
+  #button1{
+    margin-left: 0px;
+    margin-right: 0px;
+    align-content: flex-end;
+    width: auto;
+  }
+  #button2{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: auto;
+  }
+  .question{
+    margin-top: 185px;
+    max-width: 35%;
+    margin-bottom: 0px;
+  }
+  .pitch{
+    max-width: 45%;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+}
