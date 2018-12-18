@@ -1,0 +1,155 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  background-color: #F0ECEE;
+  }
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10 10 0px;
+  padding-left: 5px;
+}
+a {
+  text-decoration: none;
+}
+.adoptMeLogo{
+  float: left;
+  font-weight: 600;
+  margin-top: 0px;
+}
+.question{
+  font-weight:600;
+  text-align: left;
+  font-size: xx-large;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  
+}
+.navcontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  text-indent:0px;
+  position: relative;
+  clear:both; 
+  padding: 0;      
+  }
+.navbuttons{
+  background-color: #F0ECEE;
+  color: #88898B;
+  flex-grow: 1;
+  Font-size: large;
+  font-weight: 400px;
+  text-align: left;
+  text-indent: 0px;
+  }
+.navbuttons:hover{
+  background-color: #CCC;
+}
+.contactbuttons {
+  background-color: #FF4850;
+  color: #F0ECEE;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  font-size: large;
+  margin: auto;
+  }
+.contactbuttons:hover{
+    background-color: #CCC;
+}
+.textemphasis{
+  color:#FF4850;
+  font-weight: 600;
+  font-size: inherit;
+  }
+.pitch{
+  color: #88898B;
+  margin-top: 5px;
+}
+
+@media screen and (min-width:768px) {
+  html{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  body{
+    background-image: url('bulldog.jpg') /*if I put my semicolon after this my dog disappears, IDK why*/
+    height: 100%; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar{
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row;
+  }
+  .adoptMeLogo{
+    width: 60%;
+    margin-top: 20px;
+  }
+  .navcontainer{
+    background: none;
+    width: 30%;
+    padding: none;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    flex: none;
+  }
+  .navbuttons{
+    display: inline;
+    margin: auto;
+    text-align: center;
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contactbuttons{
+    width: auto;
+    margin: auto;
+    flex-basis: 1;
+  }
+  #button1{
+    margin-left: 0px;
+    margin-right: 0px;
+    align-content: flex-end;
+  }
+  #button2{
+    margin-left: 0px;
+    width: 250px;
+  }
+  .question{
+    margin-top: 185px;
+    max-width: 40%;
+    margin-bottom: 0px;
+  }
+  .pitch{
+    max-width: 40%;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+}
+
+/*
+Colors:
+Background-color: #F0ECEE 
+Button background color  Navigation/button text hover color  Word emphasis color: #FF4850 
+Navigation link color: #88898B 
+Button hover background color: #CCC 
+
+1. Font-family: Fira Sans (Google Font)
+2. Font-weights used: 600, 300, 400  
+3. Button padding: 10px  
+4. Button border-radius: 15px 
+
+Media query needs to go last to restyle as screen grows
+*/
